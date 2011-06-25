@@ -6,16 +6,16 @@ from setuptools import setup, find_packages
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-dst = 'debian/nova-noVNC/var/lib/nova/'
+dst = 'debian/nova-novnc/var/lib/nova/'
 os.system('rm -rf %s' % dst)
-shutil.copytree('nova-noVNC', '%s/noVNC' % dst)
+shutil.copytree('nova-novnc', '%s/noVNC' % dst)
 
 requirements = ['httplib2']
 if sys.version_info < (2,6):
     requirements.append('simplejson')
 
 setup(
-    name = "nova-noVNC",
+    name = "nova-novnc",
     version = "0.2",
     description = "",
     long_description = read('README.md'),

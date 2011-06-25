@@ -1,6 +1,6 @@
 PYTHON=`which python`
 DESTDIR=/
-PROJECT=nova-noVNC
+PROJECT=nova-novnc
 BUILDIR=$(CURDIR)/debian/$(PROJECT)
 VERSION=0.2.0
 
